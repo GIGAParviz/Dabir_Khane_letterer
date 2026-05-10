@@ -270,7 +270,7 @@ async def root():
     return {"message": "Dabirkhane API — visit /docs"}
 # ------------------------------------------------------------------------------------------------------------------
 # config.py
-from __future__ import annotations
+# removed duplicate future import
 
 from typing import List
 
@@ -309,7 +309,7 @@ class Config:
 
 # ------------------------------------------------------------------------------------------------------------------
 # data_models.py
-from __future__ import annotations
+# removed duplicate future import
 
 from datetime import datetime
 from typing import List, Literal, Optional
@@ -377,7 +377,7 @@ class LetterState(TypedDict, total=False):
 
 # ------------------------------------------------------------------------------------------------------------------
 # embed_factor.py
-from __future__ import annotations
+# removed duplicate future import
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
@@ -391,7 +391,7 @@ class EmbeddingFactory:
 
 # ------------------------------------------------------------------------------------------------------------------
 # graphs.py
-from __future__ import annotations
+# removed duplicate future import
 
 import json
 import re
@@ -527,7 +527,7 @@ class GraphNodes:
 
 # ------------------------------------------------------------------------------------------------------------------
 # knowledge_base.py
-from __future__ import annotations
+# removed duplicate future import
 
 from typing import Any, Dict, List
 from langchain_core.documents import Document
@@ -671,7 +671,7 @@ class KnowledgeBase:
 
 # ------------------------------------------------------------------------------------------------------------------
 #letter_validat.py
-from __future__ import annotations
+# removed duplicate future import
 
 import re
 import json
@@ -773,7 +773,7 @@ class LetterValidator:
 
 # ------------------------------------------------------------------------------------------------------------------
 #llm_factor.py
-from __future__ import annotations
+# removed duplicate future import
 
 from langchain_ollama import ChatOllama
 from config import Config
@@ -798,7 +798,7 @@ class LLMFactory:
         return self.create(self.config.VALIDATOR_TEMP, self.config.VALIDATOR_MAX_TOKENS)
 # ------------------------------------------------------------------------------------------------------------------
 #pip_liner.py
-from __future__ import annotations
+# removed duplicate future import
 
 from langgraph.graph import START, END, StateGraph
 from config import Config
@@ -865,7 +865,7 @@ class LetterGenerationPipeline:
         return result.get("final_letter", "")
 # ------------------------------------------------------------------------------------------------------------------
 #policy_engine.py
-from __future__ import annotations
+# removed duplicate future import
 
 from typing import Optional
 from config import Config
@@ -914,7 +914,7 @@ class PolicyEngine:
 
 # ------------------------------------------------------------------------------------------------------------------
 #prompt_library.py
-from __future__ import annotations
+# removed duplicate future import
 
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -1031,7 +1031,7 @@ class PromptLibrary:
 # ------------------------------------------------------------------------------------------------------------------
 # rag_retriever.py
  
-from __future__ import annotations
+# removed duplicate future import
 
 from reranker import Reranker
 from config import Config
@@ -1104,7 +1104,7 @@ class RAGRetriever:
         return "\n\n".join(blocks)
 # ------------------------------------------------------------------------------------------------------------------
 # reranker.py
-from __future__ import annotations
+# removed duplicate future import
 
 from typing import List, Tuple
 from data_models import LetterRequest
