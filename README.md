@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dabirkhane
 
 > An intelligent API for generating Persian administrative letters with retrieval-augmented generation (RAG), LangGraph orchestration, and Hugging Face-hosted language models.
@@ -278,16 +277,3 @@ Planned improvements for a mature release typically include:
 - Add Docker and deployment manifests
 
 ## License
-
-No license file was included in the provided source snapshot. Add a license before public release. Common choices are:
-
-- MIT
-- Apache 2.0
-- GPLv3
-
-## Notes
-
-This documentation is based on the provided source files and may contain explicit assumptions where the repository did not include deployment scripts, tests, or packaging metadata.
-=======
-# Dabir_Khane_letterer
->>>>>>> f0087b8b020301b4277675ccab3036b0a930838b
