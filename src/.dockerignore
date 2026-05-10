@@ -1,0 +1,66 @@
+# ── Python cache ──────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Tests & dev tools ─────────────────────────────
+tests/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ── Jupyter ───────────────────────────────────────
+*.ipynb
+.ipynb_checkpoints/
+
+# ── ChromaDB local data (rebuilt inside container) 
+letter_rag_db/
+
+# ── Logs ─────────────────────────────────────────
+logs/
+*.log
+
+# ── Environment & secrets ─────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Git ───────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+
+# ── IDE ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Docker files themselves (not needed in image) ─
+docker-compose.yml
+docker-compose*.yml
+nginx.conf
+Dockerfile*
+.dockerignore
+
+# ── Docs & misc ───────────────────────────────────
+*.md
+*.docx
+*.pdf
+*.txt
+!requirements.txt
