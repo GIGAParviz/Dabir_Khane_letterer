@@ -166,10 +166,6 @@ print(response.json()["letter"])
 ├── prompt_library.py
 ├── rag_retriever.py
 ├── reranker.py
-└── docs/
-    ├── ARCHITECTURE.md
-    ├── CONFIGURATION.md
-    └── CONTRIBUTING.md
 ```
 
 ## Error Handling and Troubleshooting
