@@ -1,0 +1,13 @@
+services:
+  dabirkhane-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dabirkhane-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src/letter_rag_db:/app/letter_rag_db
+    restart: unless-stopped
