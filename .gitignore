@@ -1,0 +1,4 @@
+__pycache__/ 
+*.pyc 
+src/letter_rag_db/ 
+chroma.sqlite3 
